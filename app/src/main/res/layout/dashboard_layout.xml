@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/main_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defaultPadding"
+        android:paddingEnd="@dimen/margin_large"
+        android:paddingRight="@dimen/margin_large">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/NatureText.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center|center_vertical"
+            android:text="@string/our_nature"
+            android:textAllCaps="true" />
+
+        <ImageView
+            android:id="@+id/information"
+            style="@style/NatureImageButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@android:string/unknownName"
+            android:padding="@dimen/margin_medium"
+            android:src="@drawable/ic_info1_selector" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dash_board_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnCreateMessage"
+        android:layout_below="@id/main_title_layout"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btnCreateMessage"
+        style="@style/Button.Green.NoShadow"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_big"
+        android:minWidth="300dp"
+        android:soundEffectsEnabled="true"
+        android:text="@string/create_request" />
+
+</RelativeLayout>

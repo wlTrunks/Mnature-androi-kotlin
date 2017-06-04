@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_name">natureSettings</string>
+    <string name="dialog_title_info">Информация</string>
+    <string name="dialog_default_message">Обработка</string>
+    <!--JSON fields-->
+    <string name="json_field_status">status</string>
+    <string name="json_field_message">message</string>
+    <string name="json_field_response">response</string>
+    <string name="json_field_successful">successful</string>
+    <string name="json_field_id">id</string>
+    <string name="json_field_sesion_id">session_id</string>
+    <string name="json_field_items">items</string>
+    <string name="header_user_session_id">usersessionid</string>
+    <!-- Warnings (prefix warn) -->
+    <string name="warn_file_was_not_delete">Не удалось удалить файл %1$s</string>
+    <string name="warn_file_was_not_created">Не удалось создать файл %1$s</string>
+    <!--Common-->
+    <string name="app_name">Наша природа</string>
+    <string name="menu_update">Обновить</string>
+    <!--LoginActivity-->
+    <string name="title_login">Министерство природных ресурсов\n и экологии Российской Федерации</string>
+    <string name="subTitle_login">МОБИЛЬНАЯ ПРИЕМНАЯ</string>
+    <string name="hint_login">Логин</string>
+    <string name="hint_password">Пароль</string>
+    <string name="btn_login">ВОЙТИ</string>
+    <string name="btn_registration">РЕГИСТРАЦИЯ</string>
+    <string name="label_enter_with_social_nets">Войти с помощью:</string>
+    <string name="info">Для входа используйте логин и пароль, указанные при регистрации</string>
+    <string name="dialog_message_login">Авторизация</string>
+    <string name="error_uncorrect_login_password">Неверный логин или пароль</string>
+    <string name="pointer">\t></string>
+    <string name="link_registration"><u>Регистрация</u></string>
+    <string name="link_get_password"><u><inc>Забыли пароль?</inc></u></string>
+    <string name="error_empty">Не все поля заполнены</string>
+    <string name="error_not_equals_passwords">Введенные Вами пароли не совпадают</string>
+    <string name="menu_info">Информация</string>
+    <!--RegistrationActivity-->
+    <string name="title_registration">Регистрация</string>
+    <string name="login">Логин#*#</string>
+    <string name="password">Пароль#*#</string>
+    <string name="surname">Фамилия#*#</string>
+    <string name="position">Должность#*#</string>
+    <string name="name">Имя#*#</string>
+    <string name="patronymic">Отчество</string>
+    <string name="email">E-mail#*#</string>
+    <string name="phone">Телефон#*#</string>
+    <string name="access_type">Как к Вам обращаться?#*#</string>
+    <string name="description_access_type">Выбранное Вами обращение будет использовано при  публикации Ваших сообщений</string>
+
+    <string name="error_reg_bad">Регистрация не прошла, попробуйте повторить регистрацию позже</string>
+    <string name="error_reg_good">Регистрация прошла успешно</string>
+    <!--ProfileActivity-->
+    <string name="title_profile">Профиль</string>
+    <string name="edit_title_profile">Редактирование профиля</string>
+    <string name="lk">Личный кабинет</string>
+    <string name="confirmed">Подтвержден</string>
+    <string name="email_confirmed">Email подтвержден</string>
+    <string name="phone_confirmed">Телефон подтвержден</string>
+    <string name="not_confirmed">Не подтвержден</string>
+    <string name="email_not_confirmed"><u>Email не подтвержден</u></string>
+    <string name="send_email_verification">Отправляется запрос на подтверждение Email адреса</string>
+    <string name="phone_not_confirmed"><u>Телефон не подтвержден</u></string>
+    <string name="notify">Уведомления об изменении статуса заявок</string>
+    <string name="accost_header">Как к Вам обращаться?</string>
+    <string name="accost_description">Выбранное Вами обращение будет использовано при публикации Ваших сообщений</string>
+    <string name="save">СОХРАНИТЬ</string>
+
+    <string name="organization_name_header">Название организации</string>
+    <string name="profileOGRN">ОГРН</string>
+    <string name="profilePosition">Должность</string>
+    <!--MessageActivity-->
+    <string name="create_message">ОСТАВИТЬ СООБЩЕНИЕ</string>
+    <string name="messages">МОИ СООБЩЕНИЯ</string>
+    <string name="notify_create_message">Сфотографируйте объект, укажите его на карте и отправьте сообщение</string>
+    <string name="notify_messages">Отслеживайте статус отправленных сообщений</string>
+    <string name="subTitle_message">Мобильная приемная</string>
+    <string name="title_message">Министерство природных ресурсов и экологии Российской Федерации</string>
+    <!--InformationActivity-->
+    <string name="title_information">Информация</string>
+    <string name="myProfile">ЛИЧНЫЙ КАБИНЕТ</string>
+    <string name="information">Информация</string>
+    <string name="ruls">Правила обработки</string>
+    <string name="version">Версия 1.0.1</string>
+    <!--CategoryActivity-->
+    <string name="title_category">Категории</string>
+    <string name="myProfileDescription">Просмотр и редактирование своих персональных данных</string>
+    <string name="captureObjectPhoto">Сделайте фото объекта</string>
+    <string name="label_how_it_works">Как это работает</string>
+    <string name="showOnMap">Укажите его на карте</string>
+    <string name="sendIssue">Отправьте сообщение</string>
+    <string name="confirmPassword">Повтор пароля#*#</string>
+    <string name="register">ЗАРЕГИСТРИРОВАТЬСЯ</string>
+    <string name="registering">Регистрация</string>
+    <string name="error_not_found_categories">Не удалось получить список категорий, попробуйте создать сообщение позже</string>
+    <!--DashboardActivity-->
+    <string name="create_request">Оставить сообщение</string>
+    <string name="my_request">Мои сообщения</string>
+    <string name="input_messages">Входящие сообщения</string>
+    <string name="news">Новости</string>
+    <string name="raiting_regions">Рейтинг регионов</string>
+    <string name="users_messages">Сообщения пользователей</string>
+    <string name="analytics">Аналитика</string>
+    <!--AnalyticsActivity-->
+    <string name="hunting_ground" formatted="false">В государственных опытных охотничьих хозяйствах (%d)</string>
+    <string name="special_territory" formatted="false">На особо охраняемых природных территориях (%d)</string>
+    <string name="message_selected_period" formatted="false">Сообщений за выбранный период (%d)</string>
+    <string name="message_denied" formatted="false">Отказано в публикации (%d)</string>
+    <string name="message_approved" formatted="false">Одобрено в публикации (%d)</string>
+    <string name="message_underconsideration" formatted="false">На рассмотрении (%d)</string>
+    <string name="message_onwork" formatted="false">В работе (%d)</string>
+    <string name="message_complete" formatted="false">Завершено (%d)</string>
+    <string name="message_out" formatted="false">Отклонено (%d)</string>
+    <string name="msg_for_day">За день</string>
+    <string name="msg_for_week">За неделю</string>
+    <string name="msg_total">За все время</string>
+    <string-array name="month">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+    <string-array name="rating_period">
+        <item>За сутки</item>
+        <item>За неделю</item>
+        <item>За месяц</item>
+        <item>За год</item>
+        <item>За все время</item>
+    </string-array>
+    <string-array name="rating_region">
+        <item>Российская Федерация</item>
+        <item>Центральный округ</item>
+        <item>Северо-Западный округ</item>
+        <item>Приволжский округ</item>
+        <item>Южный округ</item>
+        <item>Крымский округ</item>
+        <item>Северо-Кавказский округ</item>
+        <item>Уральский округ</item>
+        <item>Сибирский округ</item>
+        <item>Дальневосточный округ</item>
+    </string-array>
+    <string-array name="rating_value">
+        <item>Число опубликованных сообщений, ед.</item>
+        <item>Число опубликованных сообщений на душу населения, ед./100 000 чел.</item>
+        <item>Число опубликованных сообщений на площадь территории, ед./10 000 кв.км</item>
+    </string-array>
+    <!--Setting callMe-->
+    <string name="session_id">sessionId</string>
+    <string name="user">user</string>
+    <string name="password_md5">password_md5</string>
+    <string name="profileEmail">E-mail</string>
+    <string name="profileName">Имя</string>
+    <string name="profileSurname">Фамилия</string>
+    <string name="user_profile">user_profile</string>
+    <string name="requiredSymbolDescription">#*# - обязательное поле для заполнения</string>
+    <string name="addressDetecting">Определение адреса…</string>
+    <string name="addressDetected">Адрес определен</string>
+    <string name="addressNotDetected">Адрес не определен</string>
+    <string name="json_message_network_not_available">{\"message\":\"Отсутствует соединение с Интернетом, проверьте настройки подключения к сети\"}</string>
+    <string name="error_parse_json">Произошла ошибка во время чтения данных. Попробуйте повторить попытку позже</string>
+    <string name="json_field_fail_code">failCode</string>
+    <string name="json_field_fail_reason">failReason</string>
+    <string name="error_network_not_available">Отсутствует соединение с Интернетом, проверьте настройки подключения к сети</string>
+    <string name="myMessages">Мои сообщения</string>
+    <string name="categoriesListIsEmpty">Список категорий пуст</string>
+
+    <string name="categoryId">минприроды0005</string>
+    <string name="exit">ВЫЙТИ</string>
+    <string name="exiting">Выход</string>
+    <string name="passwords_not_match">Введенные пароли не совпадают, попробуйте ввести заново</string>
+    <string name="objectOnMap">Объект на карте</string>
+    <string name="category">Категория</string>
+    <string name="yourComment">Описание</string>
+    <string name="send">ОТПРАВИТЬ</string>
+    <string name="camera">Камера</string>
+    <string name="content_video">Видео</string>
+    <string name="content_picture">Фото</string>
+    <string name="gallery">Галерея</string>
+    <string name="no_sd_card">Для использование камеры необходимо наличие SD карты.</string>
+    <string name="delete">Удалить</string>
+    <string name="choose_photo_source">Выберите приложение</string>
+    <string name="choose_content_type">Выберите тип контента</string>
+    <string name="pack_data">Упаковка сообщения</string>
+    <string name="sending_issue">Отправка сообщения</string>
+    <string name="no_address">Адрес не выбран</string>
+    <string name="error">Ошибка</string>
+    <string name="ok">ОК</string>
+    <string name="cancel">ОТМЕНА</string>
+    <string name="yes">ДА</string>
+    <string name="no">НЕТ</string>
+    <string name="taking_user">Получение данных пользователя</string>
+    <string name="no_info_found">Информация не найдена</string>
+
+    <string name="uid_issue">uidIssue</string>
+    <string name="enter_all_required_fields">Заполните все обязательные поля</string>
+    <string name="company_name_is_empty">Название организации не введено</string>
+    <string name="ogrn_is_empty">ОГРН не введен</string>
+    <string name="position_is_empty">Должность не введена</string>
+    <string name="login_is_empty">Логин не введен</string>
+    <string name="password_is_empty">Пароль не введен</string>
+    <string name="phone_is_empty">Не заполнен номер телефона</string>
+    <string name="email_is_empty">Не заполнен адрес электронной почты</string>
+    <string name="patronymic_is_empty">Отчество не введено</string>
+    <string name="name_is_empty">Имя не заполнено</string>
+    <string name="surname_is_empty">Фамилия не заполнена</string>
+    <string name="registered_successful">Регистрация прошла успешно</string>
+    <string name="post_register_tips">Хотите ли Вы войти?</string>
+    <string name="entering">Вход</string>
+    <string name="profilePhone">Телефон</string>
+    <string name="user_update_success">Данные успешно обновлены</string>
+    <string name="saving">Сохранение</string>
+    <string name="system_settings_name">natutreSystemSettings</string>
+    <string name="issue_title">Сообщение № %1$s</string>
+    <string name="issue_title_no_number_sym">Сообщение %1$s</string>
+    <string name="load_yet">Загрузить еще</string>
+    <string name="issue_list_empty">У Вас пока нет сообщений</string>
+    <string name="title_instruction">Инструкция</string>
+    <string name="title_ruls">Правила обработки</string>
+    <string name="url_faq">http://www.priroda-ok.ru/#/about/faq </string>
+    <string name="url_ruls">http://www.priroda-ok.ru/#/about/modrules</string>
+    <string name="url_project_goals">http://www.priroda-ok.ru/#/about/about</string>
+    <string name="info_issue_not_saved">Имеются несохраненные данные, при переходе на предыдущий экран данные будут утеряны. Перейти?</string>
+    <string name="attention">Внимание</string>
+    <string name="new_issue_title">Новое сообщение</string>
+    <string name="map_title">Объект на карте</string>
+    <string name="dialog_pw_recovery">Обработка</string>
+    <string name="recovery_success">На указанный адрес выслана инструкция по восстановлению пароля</string>
+    <string name="title_recovery_pw">Восстановление пароля</string>
+    <string name="message_recovery_pw">На Ваш адрес электронной почты будет направлено письмо с новым паролем</string>
+    <string name="btn_next">ПРОДОЛЖИТЬ</string>
+    <string name="answer">Ответ</string>
+    <string name="completed_date">Срок устранения:</string>
+    <string name="department">Ведомство:</string>
+    <string name="responsible">Ответственный:</string>
+    <string name="notify_begining_sending">Началась отправка сообщения</string>
+    <string name="notify_title_begining_send">Отправка сообщения</string>
+    <string name="notify_ticker_begining_send">Началась отправка сообщения</string>
+    <string name="notify_content_begining_send">Данная процедура может занять несколько минут</string>
+    <string name="notify_ticker_success">Сообщение успешно доставлено!</string>
+    <string name="notify_ttitle_success">Сообщение № %s успешно доставлено</string>
+    <string name="notify_content_success">Для просмотра нажмите на подсказку</string>
+    <string name="notify_ticker_fial">Не удалось отправить сообщение..</string>
+    <string name="notify_title_fail">При отправке сообщения произошла ошибка</string>
+    <string name="notify_content_fail">Нажмите на подсказку, для повторной отправки</string>
+    <string name="notify_big_content_title">Ошибка</string>
+    <string name="setup_google_maps">Установите Google Maps</string>
+    <string name="confirmEmail">Активируйте Вашу учетную запись для получения возможности работы с сообщениями</string>
+    <string name="btn_reg_canceled">ЗАВЕРШИТЬ РЕГИСТРАЦИЮ</string>
+    <string name="title_data_person">Персональные данные</string>
+    <string name="type_of_user">Выберите статус автора#*#</string>
+    <string name="corp_name">Название организации</string>
+    <string name="ogrn">ОГРН#*#</string>
+    <string name="login_is_short">Логин не может быть менее 6 символов</string>
+    <string name="password_is_short">Пароль не может быть менее 6 символов</string>
+    <string name="btn_reg_confirm">Принимаю</string>
+    <string name="btn_reg_un_confirm">Не принимаю</string>
+    <string name="orng_must_have_13_char">ОГРН должен состоять из 13 цифр</string>
+    <string name="email_format_uncorrect">Неверный формат email</string>
+    <string name="incorrect_email">E-mail не соответствует формату</string>
+    <string name="send_email_verification_succes">Не забудьте подтвердить адрес электронной почты в течение 24 часов с
+        момента регистрации, пройдя по ссылке в высланном на указанный адрес письме. В противном случае учетная запись
+        будет заблокирована.
+    </string>
+
+    <string name="size_is_big">Размер фото и видео файлов превышает 10 мегабайт, отправка сообщения невозможна</string>
+    <string name="error_not_selected_user_status">Выберите Ваш статус для продолжения</string>
+    <string name="by_name">По имени</string>
+    <string name="by_surname">По фамилии</string>
+    <string name="by_patronymic">По отчеству</string>
+    <string name="title_notify_type">Согласие получать уведомления об изменении статусов сообщений</string>
+    <string name="by_email">По email</string>
+    <string name="by_sms">По телефону</string>
+    <string name="error_not_selected_type_access">Выберите вариант обращения</string>
+    <string name="phone_format_uncorrect">Неверно задан номер телефона</string>
+    <string name="phone_country_code">+7</string>
+    <string name="surname_contains_wrong_symbols">Фамилия должна содержать только кириллицу</string>
+    <string name="patronymic_contains_wrong_symbols">Отчество должно содержать только кириллицу</string>
+    <string name="name_contains_wrong_symbols">Имя должно содержать только кириллицу</string>
+    <string name="name_corp">Название организации#*#</string>
+    <string name="nameCorp">Название организации</string>
+    <string name="attention_title">Внимание</string>
+    <string name="attention_hint">Для завершения регистрации Вам необходимо ознакомится и принять следующие условия
+    </string>
+    <string name="user_confirm_text">Я подтверждаю достоверность направляемых мной сообщений о выявлении возможных
+        нарушений на территориях субъектов Российской Федерации, в том числе фото/видеоматериалов
+    </string>
+    <string name="corp_confirm_text_item_1">Я подтверждаю достоверность указанных мною лично в заявке
+        на регистрацию своих персональных данных
+    </string>
+    <string name="corp_confirm_text_item_2">Я даю согласие на обработку своих персональных данных в соответствии с
+        Федеральным законом от 27.07.2008 №152-Ф3, в том числе на передачу указанных мною лично персональных данных при
+        регистрации, в уполномоченные (заинтересованные) государственные органы
+    </string>
+    <string name="corp_confirm_text_item_3">Я подтверждаю достоверность направляемых мной сообщений о выявлении
+        возможных нарушений на территориях субъектов Российской Федерации, в том числе фото/видеоматериалов
+    </string>
+    <string name="error_occurs_in_registration">Данные регистрации заполнены неверно</string>
+    <string name="error_occurs_in_profile">Данные профиля заполнены неверно</string>
+    <string name="function_not_available">Функция находится в разработке</string>
+    <string name="retrive_user_data">Получение данных..</string>
+    <string name="fb_client_id">1441294586092649</string>
+    <string name="vk_client_id">4055532 </string>
+    <string name="tw_client_id">stDECj4kKhG532tjEpdsRw</string>
+    <string name="tw_secret_key">HI5dyFjIZhPPFNB6q3DObWmGbqfbW0Ty0dNzGlf9U</string>
+    <string name="reg_is_uncorrect">Не удалось войти в приложение с использованием данных социальной сети</string>
+    <string name="enter_with">Вход через</string>
+    <string name="message_add_pin_code">Требуется ввести указанный pin код</string>
+    <string name="title_add_pin">Авторизация</string>
+    <string name="enter_pin_code">Для продолжения регистрации требуется ввести pin код</string>
+    <string name="maybe_pin_code_is_uncorrect">Возможно Вы ввели неверно pin код, авторизация не прошла, попробуйте
+        ввести pin код повторно
+    </string>
+    <string name="verify_code">Код подтверждения</string>
+    <string name="confirm">ПОДТВЕРДИТЬ</string>
+    <string name="marker">*</string>
+    <string name="type_user_user">Физическое лицо</string>
+    <string name="type_user_corp">Представитель общественного объединения или иной некомерческой организации</string>
+    <string name="error_it_is_impossible_to_load_this_content">Невозможно отправить данный контент</string>
+    <string name="message_get_request_for_confirm_phone">Отправить запрос на получение кода подтверждения номера
+        телефона?
+    </string>
+    <string name="wait_sms">Запрос выполнен, ожидайте получения смс с кодом подтверждения номера телефона</string>
+    <string name="success_for_confirm_phone">Подтверждение номера телефона прошло успешно</string>
+    <string name="error_confirm_code_not_enter">Код подтверждения не введен</string>
+    <string name="error_with_attached_video">Во время добавления видео файла произошла ошибка, попробуйте добавить данный
+        файл из галереи
+    </string>
+    <string name="error_unknown_url_clicked">Здесь Вы можете только ввести логин и пароль социальной сети
+        для входа в приложение \"Наша природа\"
+    </string>
+    <string name="hint_describe_problem">Опишите проблему</string>
+    <string name="hint_object_on_map">Выберите на карте</string>
+    <string name="title_using_terms">Условия и положения</string>
+    <string name="mobile">Мобильный</string>
+    <string name="login_contains_wrang_symbols">Логин должен содержать только латиницу</string>
+    <string name="select_picture">Выберите картинку</string>
+    <string name="error_phone_is_not_exist">Чтобы подвердить номер телефона, требуется его ввести и сохранить данные
+        пользователя
+    </string>
+    <string name="select_allowed_type_access">Выберите один из возможных вариантов обращения к Вам: \n-по фамилии, имени и
+        отчеству; \n-по фамилии и имени; \n-по имени и отчеству; \n-только по имени; \n-только по фамилии.
+    </string>
+    <string name="by_corp_name">По названию организации</string>
+    <string name="save_rough_copy">Сохранить в черновиках?</string>
+    <string name="test_request">Тестируем запросы тут</string>
+    <string name="default_no_internet_err">Отсутствует подключение к интернету, проверьте настройки соединения</string>
+    <string name="default_reload">Обновить</string>
+    <string name="volley_unknown_error">Произошла непредвиденная ошибка, попробуйте повторить операцию позже</string>
+    <string name="filter_empty_text">По вашему запросу нет заявок, попробуйте выбрать другие параметры фильтрации</string>
+    <string name="sign_up_title">Регистрация</string>
+    <string name="sign_in_title">Авторизация</string>
+    <string name="sign_in">Войти</string>
+    <string name="login_hint">Логин</string>
+    <string name="зpassword_hint">Пароль</string>
+    <string name="error_password_is_empty">Поле \"Пароль\" не заполнено</string>
+    <string name="password_hint">Пароль</string>
+    <string name="error_login_is_empty">Поле \"Логин\" не заполнено</string>
+    <string name="registration_type_user">Физическое лицо</string>
+    <string name="registration_type_company">Юридическое лицо</string>
+    <string name="hint_registration_types">Выберите, как Вы будете зарегистрированы в системе, как физическое лицо или как юридическое.</string>
+    <string name="surname_hint">Фамилия</string>
+    <string name="company_hint">Название компании</string>
+    <string name="error_surname_is_empty">Поле \"Фамилия\" не заполнено</string>
+    <string name="name_hint">Имя</string>
+    <string name="position_hint">Должность</string>
+    <string name="error_name_is_empty">Поле \"Имя\" не заполнено</string>
+    <string name="patronymic_hint">Отчество</string>
+    <string name="email_hint">Электронная почта</string>
+    <string name="error_email_is_empty">Поле \"Электронная почта\" не заполнено</string>
+    <string name="phone_mask">+7 (###) ###-##-##</string>
+    <string name="offerta_html">Я принимаю &lt;a href="http://nashapriroda.mnr.gov.ru/NaturePortal/modrules.html">условия регистрации&lt;/a></string>
+    <string name="error_confirm_password_is_empty">Поле \"Повторите пароль\" не заполнено</string>
+    <string name="new_password_confirm_hint">Повторите пароль</string>
+    <string name="next">Далее</string>
+    <string name="error_password_is_invalid">Пароли не совпадают</string>
+    <string name="error_email_is_invalid">Поле \"E-mail\"  не соотвествует формату</string>
+    <string name="error_phone_is_empty">Поле \"Телефон\" не заполнено</string>
+    <string name="hint_registration_confirm_reg">На Ваш номер мобильного телефона %s было направлено SMS c кодом для подтверждения аккаунта и завершения регистрации.</string>
+    <string name="hint_registration_confirm_email">На Ваш адрес электронной почты %s было направлено письмо.\n\nПройдите по ссылке в письме для подтверждения смены адреса.</string>
+    <string name="hint_registration_confirm_phone">На номер мобильного телефона %s было направлено SMS c кодом для подтверждения смены номера.</string>
+    <string name="repeat_sms">Отправить код еще раз</string>
+    <string name="repeat_email">Отправить письмо еще раз</string>
+    <string name="notification_hint">Я согласен(на) получать уведомления о ходе рассмотрения сообщений на email</string>
+    <string name="notification_sms_hint">Я согласен(на) получать sms-уведомления о ходе рассмотрения сообщений</string>
+    <string name="requared_fields_hint">*Поля обязательны для заполнения</string>
+    <string name="type_voiting_hint">Как к Вам обращаться?</string>
+    <string name="type_voiting_descriptions">Необходимо выбрать одно из предложенных полей или комбинацию полей. Выбранное Вами обращение будет использовано при публикации Ваших сообщений.</string>
+    <string name="new_title">Новость</string>
+    <string name="choose_position_hint">Выберите на карте</string>
+    <string name="claim_create">Новое сообщение</string>
+    <string name="claim_edit_draft">Редактирование черновика</string>
+    <string name="image_camera">Снять фото</string>
+    <string name="video_camera">Снять видео</string>
+    <string name="video_gallery">Выбрать видео</string>
+    <string name="image_gallery">Выбрать фото</string>
+    <string name="get_permission">Для корректной работы необходимо предоставить доступ к памяти устройства</string>
+    <string name="get_permission_location">Для корректной работы необходимо предоставить доступ к определению местоположения устройства</string>
+    <string name="title_place_on_map">Объект на карте</string>
+    <string name="title_geocoding">Объект на карте</string>
+    <string name="geocoding">Определение адреса..</string>
+    <string name="my_claims">Мои обращения</string>
+    <string name="incoming_claims">Входящие обращения</string>
+    <string name="other_claims">Обращения пользователей</string>
+    <string name="send_email_again">Отправить письмо еще раз</string>
+    <string name="message_recovery_password">На Ваш адрес электронной почты будет направлено письмо с новым паролем</string>
+    <string name="email_not_registered">Не существует зарегистрированного пользователя с таким e-mail, проверьте правильность написания или зарегистрируйтесь</string>
+    <string name="moderation_rules">Правила модерации сообщений</string>
+    <string name="moderation_rules_html"> &lt;a http://nashapriroda.mnr.gov.ru/NaturePortal/instructions.html">Правила модерации сообщений&lt;/a></string>
+    <string name="faq">Часто задаваемые вопросы</string>
+    <string name="faq_html"> &lt;a http://nashapriroda.mnr.gov.ru/NaturePortal/instructions.html">Часто задаваемые вопросы&lt;/a></string>
+    <string name="project_goal">Цель проекта</string>
+    <string name="project_goal_html"> &lt;a http://nashapriroda.mnr.gov.ru/NaturePortal/modrules.html">Цель проекта&lt;/a></string>
+    <string name="comments">Комментарии</string>
+    <string name="show_all_comments" formatted="false">Посмотреть все комментарии (%d)</string>
+    <string name="user_type">Статус заявителя</string>
+    <string name="last_name">Фамилия</string>
+    <string name="first_name">Имя</string>
+    <string name="middle_name">Отчество</string>
+    <string name="phone_hint">Контактный телефон</string>
+    <string name="email_hint_profile">Email</string>
+    <string name="login_hint_profile">Логин</string>
+    <string name="recieve_emails">Я согласен(на) получать уведомления о ходе рассмотрения сообщения по e-mail</string>
+    <string name="exit_profile">Выйти</string>
+    <string name="name_by_firstname">Имя</string>
+    <string name="name_by_last_name">Фамилия</string>
+    <string name="name_by_middle_name">Отчество</string>
+    <string name="name_by">Как к Вам обращаться?</string>
+    <string name="old_password_hint">ТЕКУЩИЙ ПАРОЛЬ</string>
+    <string name="error_company_is_empty">Поле \\\"Название компании\\\" не заполнено</string>
+    <string name="error_company_ogrn_is_empty">Поле \"ОГРН\" не заполнено</string>
+    <string name="company_ogrn_hint">ОГРН</string>
+    <string name="error_company_position_is_empty">Поле \"Город регистрации компании\" не заполнено</string>
+    <string name="company_position_hint">Город регистрации компании</string>
+    <string name="about_title">О приложении</string>
+    <string name="choose_date_title">Выберите период</string>
+    <string name="claim_edit">Редактирование сообщения</string>
+    <string name="title_need_approve">Требуется подтверждение</string>
+    <string name="title_need_edit">Отказано в публикации</string>
+    <string name="title_finished">Предложен статус \"Завершено\"</string>
+    <string name="title_planned">Предложен статус \"Запланировано\"</string>
+    <string name="title_denied">Предложенный статус был отклонен</string>
+    <string name="title_repeated">Сообщение направлено Вам повторно</string>
+    <string name="title_pastdue">Сообщение просрочено</string>
+    <string name="day">За сутки</string>
+    <string name="week">За неделю</string>
+    <string name="all_time">За все время</string>
+    <string name="year">За год</string>
+    <string name="month">За месяц</string>
+    <string name="analytics_title">Аналитика</string>
+    <string name="all">Все</string>
+    <string-array name="info_menu">
+        <item>Инструкция</item>
+        <item>Правила обработки</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tutorial">Туториал</string>
+    <string name="save_draft_claim">Сохранить</string>
+    <string name="tittle_start">Начать</string>
+    <string name="registration_legal_entity">Регистрация юридического лица</string>
+    <string name="registration_individual_entity">Регистрация физического лица</string>
+    <string name="field_must_contain_only">Должны использоваться только цифра, латиница и дефис. Минимум 6 символов.</string>
+    <string name="error_password_too_long">Длина пароля превышает допустимую. Максимум 20 символов.</string>
+    <string name="error_password_too_short">Длина пароля не соответствует требованиям. Минимум 6 символов.</string>
+
+    <string name="APP_VERSION">1.0</string>
+    <string name="app_version_template">v. %s</string>
+    <string name="wrong_app_error">Вы не можете пользоваться данным приложением!</string>
+    <string name="our_nature">Наша природа</string>
+    <string name="submit">Отправить</string>
+    <string name="find">Поиск</string>
+    <string name="sort">Сортировать</string>
+    <string name="sort_all_time">За все время</string>
+    <string name="sort_selected_time">Выбраные даты</string>
+    <string name="photo_video_req">Фото/Видео</string>
+    <string name="required_fields">*Поля обязательные для заполнения</string>
+    <string name="input_view_hint">Заполнение поля %s</string>
+    <string name="hint_only_cyrillics">Только на кириллице, не более 50 символов. Первая буква должна быть заглавной</string>
+    <string name="hint_only_latin">Только на латинице, не более 50 символов</string>
+    <string name="changed_email_message" formatted="false">На ваш адрес электронной почты %s было направлено письмо. Пройдите по ссылке в письме для подтверждения адреса.</string>
+    <string name="changed_phone_message" formatted="false">На ваш номер телефона %s было направлено смс.</string>
+    <string name="hint_ic_password">Пароль не должен содержать кирилицу (только латиница) и пробелов, минимальная длина 6, максимальная длина 20</string>
+    <string name="hint_ic_password_confirm">Должен совпадать с введенным в поле Пароль, максимальная длина 20</string>
+    <string name="suggestion_msg_text">Выберите хотя бы один тип обращения из предложенных</string>
+    <string name="suggestion_type_text">\n-по имени\n-по фамилии\n-по имени и фамилии\n-по имени и отчеству\n-по имени, отчеству и фамилии</string>
+
+    <string name="crop_image_menu_crop">Вырезать</string>
+    <string name="confirm_sms_unfinished">Подтверждение номера телефона дает возможность пользоваться всеми функциями приложения. Вы можете сделать это позже в профиле.</string>
+    <string name="title_confirm_sms_unfinished">Подтверждение номера телефона</string>
+    <string name="last_day_warning">Срок обработки сообщения истекает сегодня</string>
+</resources>
+

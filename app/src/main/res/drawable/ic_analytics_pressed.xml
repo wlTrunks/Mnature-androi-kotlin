@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="70dp"
+    android:height="70dp"
+    android:viewportWidth="70"
+    android:viewportHeight="70">
+
+    <group
+            android:translateX="-221.000000"
+            android:translateY="-392.000000">
+        <group
+                android:translateX="221.000000"
+                android:translateY="392.000000">
+            <path
+                android:fillColor="#6d9f0d"
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M35 0C54.39 0 70 15.61 70 35 70 54.39 54.39 70 35 70 15.61 70 0 54.39 0 35 0 15.61 15.61 0 35 0Z" />
+            <path
+                android:fillType="evenOdd"
+                android:strokeWidth="1"
+                android:pathData="M 13 13 H 57 V 57 H 13 V 13 Z" />
+            <path
+                android:fillType="evenOdd"
+                android:strokeColor="#FFFFFF"
+                android:strokeWidth="2"
+                android:pathData="M48.8333333,32.3333333 C48.8333333,25.7059163 43.4607503,20.3333333
+36.8333333,20.3333333 L36.8333333,32.3333333 L48.8333333,32.3333333 Z" />
+            <path
+                android:fillType="evenOdd"
+                android:strokeColor="#FFFFFF"
+                android:strokeWidth="2"
+                android:pathData="M45.3333333,36.5 C45.3333333,43.4035594 39.7368927,49 32.8333333,49
+C25.929774,49 20.3333333,43.4035594 20.3333333,36.5 C20.3333333,29.5964406
+25.929774,24 32.8333333,24 L32.8333333,36.5 L45.3333333,36.5 Z" />
+        </group>
+    </group>
+</vector>

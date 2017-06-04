@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Button Styles -->
+    <style name="NatureButton" parent="Button">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="NatureList" parent="android:Widget.AbsListView">
+        <!--<item callMe="android:layout_marginTop">8dp</item>-->
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <!--<item callMe="android:layout_marginBottom">8dp</item>-->
+
+        <item name="android:textViewStyle">@style/NatureText.ListItem</item>
+
+        <!--<item callMe="android:list">@drawable/selectable_background_light_green</item>-->
+
+    </style>
+
+    <style name="NatureRadioButton" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">4sp</item>
+        <item name="android:layout_marginBottom">4sp</item>
+        <item name="android:layout_marginRight">4sp</item>
+        <item name="android:layout_marginLeft">4sp</item>
+    </style>
+
+    <style name="NatureImageButton">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <!-- TextView Styles -->
+    <style name="NatureText" parent="android:Widget.TextView">
+        <item name="android:textColorHint">@color/textcolor_selector_black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">sans-serif-light</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="NatureText.Medium">
+        <item name="android:fontFamily" tools:ignore="NewApi">sans-serif-medium</item>
+    </style>
+
+    <style name="NatureText.Regular">
+        <item name="android:fontFamily" tools:ignore="NewApi">sans-serif-regular</item>
+    </style>
+
+    <style name="NatureActiveButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:gravity">center|center_vertical</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@drawable/textcolor_selector</item>
+    </style>
+
+    <style name="NatureText.ListItem" parent="android:Widget.TextView">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NatureText.Micro">
+        <item name="android:fontFamily" tools:ignore="NewApi">sans-serif-light</item>
+        <item name="android:textSize">@dimen/text_size_micro</item>
+    </style>
+
+    <style name="NatureText.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="NatureText.Normal">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">sans-serif-medium</item>
+    </style>
+    <style name="NatureText.Condensed">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">sans-serif-condensed</item>
+    </style>
+
+    <style name="NatureText.Bold">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">sans-serif-bold</item>
+    </style>
+
+    <style name="NatureText.Light">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">sans-serif-light</item>
+    </style>
+
+    <style name="NatureText.Large" parent="NatureText.Normal">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="NatureLabel">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="NatureLabel.ConfirmSubtitle">
+        <item name="android:textColor">@color/subtitle_screen</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="NatureLabel.GreenHeader">
+        <item name="android:textColor">@color/nature_green</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="NatureLabel.InputLabel">
+        <item name="android:gravity">left</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="NatureLabel.InputLabel.Text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.4</item>
+    </style>
+
+    <style name="NatureLabel.InputLabel.CheckBox">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.4</item>
+    </style>
+
+    <style name="NatureLabel.InputLabel.Text.WithRequiredMarker">
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="NatureLabel.ButtonLabel">
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="NatureLabel.Header">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="NatureLabel.Medium">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="NatureLabel.Gray">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/label_text_color</item>
+    </style>
+
+    <style name="NatureLabel.Gray.Medium">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="NatureLabel.Gray.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="NatureLabel.Gray.Micro">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!---->
+    <style name="NatureLabel.LoginTitleScreen">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/title_screen</item>
+    </style>
+
+    <style name="NatureLabel.LoginTSubtitleScreen">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/subtitle_screen</item>
+    </style>
+
+    <style name="NatureLabel.Link">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@drawable/link_selector</item>
+    </style>
+    <!--<style callMe="NatureLabel.RequiredMarker">
+        <item callMe="android:layout_marginRight">0dp</item>
+        <item callMe="android:layout_marginLeft">0dp</item>
+        <item callMe="android:layout_marginBottom">0dp</item>
+        <item callMe="android:layout_marginTop">0dp</item>
+        <item callMe="android:gravity">bottom</item>
+        <item callMe="android:textColor">@color/nature_green</item>
+        <item callMe="android:textSize">22sp</item>
+        <item callMe="android:text">@string/marker</item>
+    </style>-->
+
+    <style name="NatureLabel.Gray.Medium.RequiredMarkerDescription">
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:textColor">@color/label_text_color</item>
+    </style>
+
+    <!-- EditText Styles -->
+    <style name="NatureEditor" >
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="NatureEditor.Address">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <!--<item name="android:drawableRight">@drawable/pin_small</item>-->
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:inputType">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:longClickable">false</item>
+    </style>
+
+    <style name="NatureEditor.Area">
+        <item name="android:minLines">5</item>
+        <item name="android:gravity">top</item>
+    </style>
+
+    <style name="NatureEditor.WithLabel">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/edittext</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.6</item>
+        <item name="android:gravity">right|bottom</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="NatureEditor.Field">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/edittext</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="NatureEditor.WithLabel.RU_TEXT">
+        <item name="android:inputType">text</item>
+        <item name="android:digits">абвгдеёжзийклмнопрстуфхкцщшъьыэюя
+            АБВГДЕЁЖЗИЙКЛМНОПРСТУФХКЦЩШЪЬЫЭЮЯ
+        </item>
+    </style>
+
+    <style name="NatureEditor.WithLabel.EN_TEXT">
+        <item name="android:inputType">text</item>
+        <item name="android:digits">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</item>
+    </style>
+
+    <style name="NatureEditor.WithLabel.DIGIT">
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="NatureEditor.Authorization">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <!-- Divider Style -->
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <!--<item name="android:background">@drawable/divider</item>-->
+    </style>
+
+    <style name="Divider.Thick">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:background">@color/dark_nature_green</item>
+    </style>
+    <style name="Divider.Thickest" parent="Divider.Thick">
+        <item name="android:layout_height">1dp</item>
+    </style>
+    <!-- Wrapper Style -->
+    <style name="LinearWindowWrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearLineWrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="NatureGrayPanel">
+        <!--<item callMe="android:background">@drawable/gray_box</item>-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+
+    <style name="NaturePanel">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="NaturePanel.Footer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+    </style>
+
+    <style name="NaturePanel.Vertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="NaturePanel.Vertical.Center">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="NaturePanel.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+    <style name="NaturePanel.Horizontal.Center">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="NaturePanel.Vertical.WithSidePadding">
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+
+    <style name="NatureGrayPanelLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="NaturePanel.Horizontal.Input.Text">
+        <item name="android:weightSum">1</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="NaturePanel.Horizontal.Input">
+    </style>
+
+    <style name="NaturePanel.Horizontal.Input.CheckBox">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Action Bar Style -->
+
+
+    <style name="NatureActionBarTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NatureCheckBox" parent="android:Widget.CompoundButton.CheckBox">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!action_bar_styles: styles_light_green-->
+    <style name="Theme.Light_green" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarItemBackground">@color/nature_green</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Light_green</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Light_green</item>
+
+        <!--<item name="android:actionModeBackground">@drawable/cab_background_top_light_green</item>-->
+        <!--<item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_light_green-->
+        <!--</item>-->
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Light_green
+        </item>
+
+        <!-- Light.DarkActionBar specific -->
+        <item name="android:actionBarWidgetTheme">@style/Theme.Light_green.Widget</item>
+
+    </style>
+
+
+
+    <style name="PopupMenu.Light_green" parent="Widget.AppCompat.ListPopupWindow">
+        <!--<item name="android:popupBackground">@drawable/menu_dropdown_panel_light_green</item>-->
+    </style>
+
+    <style name="DropDownListView.Light_green" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:listSelector">@color/nature_green</item>
+    </style>
+
+
+    <style name="ActionButton.CloseMode.Light_green" parent="Widget.AppCompat.ActionButton.CloseMode">
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Light_green.Widget" parent="Theme.AppCompat">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Light_green</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Light_green</item>
+    </style>
+
+
+    <!-- !!!!!!!!!!!!!!!!!!
+    theme: styles_light_green-->
+
+
+
+
+
+    <style name="TabTextlight_green">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <!-- v14 <item callMe="android:textAllCaps">true</item> -->
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:maxWidth">180dip</item>
+    </style>
+
+
+
+    <style name="SpinnerItemlight_green" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="GridView" parent="NatureText.Small">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/grid_normal_counter</item>
+        <item name="android:gravity">center</item>
+        <item name="layout_columnWeight">1</item>
+        <item name="layout_gravity">fill_horizontal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="GridView.Large">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:layout_height">@dimen/grid_large_counter</item>
+    </style>
+
+    <style name="GridView.Normal">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">center|right</item>
+        <item name="layout_columnWeight">1</item>
+        <item name="layout_rowWeight">1</item>
+    </style>
+    <style name="GridView.Light" parent="GridView">
+        <item name="android:fontFamily" tools:ignore="NewApi">sans-serif-light</item>
+    </style>
+    <style name="GridView.Light.Large" parent="GridView.Large">
+        <item name="android:fontFamily" tools:ignore="NewApi">sans-serif-light</item>
+        <item name="android:textSize">@dimen/text_size_largest</item>
+    </style>
+
+    <style name="NatureText.Small.Center">
+        <item name="android:layout_width">match_parent</item>
+        <!--<item callMe="android:layout_height">?attr/actionBarSize</item>-->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="NatureText.Small.Center.Left">
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="NatureText.EmptyStub">
+        <item name="android:id">@android:id/empty</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/default_empty_list</item>
+        <item name="android:layout_margin">@dimen/defaultPadding</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <string name="default_empty_list">Список пуст</string>
+
+    <style name="ripple">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.Design.TextInputLayout">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:labelTextSize">@dimen/text_size_large</item>
+        <item name="android:textColorHint">@color/title_color</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="colorAccent">@color/natureColorPrimaryDark</item>
+        <item name="colorControlNormal">@color/text_green_black</item>
+        <item name="colorControlActivated">@color/natureColorPrimaryDark</item>
+    </style>
+
+    <style name="InputView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/defaultPadding</item>
+        <item name="android:theme">@style/TextInputLayoutStyle</item>
+        <item name="hintTextAppearance">@style/NatureText.Bold</item>
+    </style>
+    <style name="Button" parent="NatureText">
+        <item name="android:fontFamily" tools:ignore="NewApi">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">220dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingLeft">@dimen/defaultPadding</item>
+        <item name="android:paddingRight">@dimen/defaultPadding</item>
+        <item name="android:elevation" tools:targetApi="lollipop">0dp</item>
+    </style>
+
+    <style name="Button.Green">
+        <item name="android:background">@drawable/button_green</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Button.GreenBorder">
+        <item name="android:background">@drawable/button_green_border</item>
+        <item name="android:textColor">@color/text_green_white</item>
+    </style>
+
+    <style name="Button.Green.NoShadow" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">220dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingLeft">@dimen/defaultPadding</item>
+        <item name="android:paddingRight">@dimen/defaultPadding</item>
+        <item name="android:background">@drawable/button_green</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:elevation" tools:targetApi="lollipop">0dp</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">sans-serif-condensed</item>
+    </style>
+
+    <style name="Button.Green.Ugly" parent="Button.Green.NoShadow">
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:minWidth">80dp</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

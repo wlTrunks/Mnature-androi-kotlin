@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/inputLogin"
+            layout="@layout/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/signIn"
+            style="@style/Button.Green"
+            android:layout_below="@id/inputLogin"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/defaultPadding"
+            android:layout_marginTop="@dimen/defaultPadding"
+            android:text="@string/sign_in"/>
+
+        <TextView
+            android:id="@+id/recoveryPassword"
+            style="@style/NatureText"
+            android:layout_below="@id/signIn"
+            android:layout_marginBottom="@dimen/defaultPadding"
+            android:layout_marginTop="@dimen/defaultPadding"
+            android:gravity="center_horizontal"
+            android:text="Забыли пароль?"
+            android:textColor="@color/natureColorPrimary"/>
+
+    </RelativeLayout>
+</ScrollView>

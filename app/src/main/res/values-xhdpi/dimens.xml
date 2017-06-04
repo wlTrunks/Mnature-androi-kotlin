@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--image size-->
+    <dimen name="photo_video_size">100dp</dimen>
+    <dimen name="ic_main_size">80dp</dimen>
+    <dimen name="text_size_largest">22sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_micro">10sp</dimen>
+    <dimen name="margin_smallest">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">6dp</dimen>
+    <dimen name="margin_large">10dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="defaultPadding">16dp</dimen>
+    <dimen name="default_radius_button">25dp</dimen>
+    <dimen name="padding_normal">10dp</dimen>
+    <dimen name="padding_top_large">30dp</dimen>
+    <dimen name="padding_top_largest">45dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="ic_size">30dp</dimen>
+    <dimen name="spinner_padding">4dp</dimen>
+    <dimen name="margin_big">20dp</dimen>
+    <dimen name="tutorial_image_size">350dp</dimen>
+    <dimen name="ic_close_size">25dp</dimen>
+    <dimen name="grid_large_counter">70dp</dimen>
+    <dimen name="grid_normal_counter">30dp</dimen>
+    <dimen name="news_image_large">250dp</dimen>
+    <dimen name="toolbar_title">14sp</dimen>
+</resources>

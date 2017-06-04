@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SmartImageView">
+        <attr name="fallbackResourceId" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PhotoLayout">
+        <attr name="limit" format="integer|enum">
+            <enum name="unlimit" value="-1"/>
+        </attr>
+        <attr name="photoWidth" format="dimension"/>
+        <attr name="photoHeight" format="dimension"/>
+        <attr name="stubView" format="reference"/>
+        <attr name="editable" format="boolean"/>
+        <attr name="contentPaddingLeft" format="dimension"/>
+        <attr name="contentPaddingRight" format="dimension"/>
+        <attr name="contentPaddingTop" format="dimension"/>
+        <attr name="contentPaddingBottom" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="SlidingImageView">
+        <attr name="limitOfImage" format="integer"/>
+        <attr name="isAllowedFadingOnSlide" format="boolean"/>
+        <attr name="isEnableCacheOnDisk" format="boolean"/>
+        <attr name="isEnableCacheOnMemory" format="boolean"/>
+        <attr name="isEnableFadeInOnCreate" format="boolean"/>
+        <attr name="sizeOfDiskCacheInMb" format="integer"/>
+        <attr name="sizeOfMemoryCacheInMb" format="integer"/>
+    </declare-styleable>
+
+    <!-- themes: attrs_light_green -->
+    <declare-styleable name="TabWidget">
+
+        <!-- Drawable used to draw the divider between tabs. -->
+        <!--<attr callMe="divider" format="reference"/>-->
+        <!-- Determines whether the strip under the tab indicators is drawn or not. -->
+        <attr name="tabStripEnabled" format="boolean"/>
+        <!-- Drawable used to draw the left part of the strip underneath the tabs. -->
+        <attr name="tabStripLeft" format="reference"/>
+        <!-- Drawable used to draw the right part of the strip underneath the tabs. -->
+        <attr name="tabStripRight" format="reference"/>
+        <!-- Layout used to organize each tab's content. -->
+        <attr name="tabLayout" format="reference"/>
+
+    </declare-styleable>
+
+    <attr name="NatureSpinner" format="reference"/>
+
+    <declare-styleable name="InputView">
+        <attr name="input_type">!-- There is no content type. The text is not editable. -->
+            <flag name="none" value="0x00000000"/>
+            <flag name="textNoSuggestions" value="0x00080001"/>
+            <flag name="textEmailAddress" value="0x00000021"/>
+            <flag name="textPersonName" value="0x00000061"/>
+            <flag name="textPassword" value="0x00000081"/>
+            <flag name="textCapWords" value="0x00002000"/>
+            <flag name="number" value="0x00000002"/>
+            <flag name="phone" value="0x00000003"/>
+            <flag name="datetime" value="0x00000004"/>
+            <flag name="date" value="0x00000014"/>
+            <flag name="time" value="0x00000024"/>
+        </attr>
+        <attr name="hint_str" format="string"/>
+        <attr name="error_str" format="string"/>
+        <attr name="required" format="boolean"/>
+        <attr name="focusable" format="boolean"/>
+        <attr name="icon" />
+        <attr name="icon_visible" format="boolean" />
+        <attr name="max_chars" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="LabelView">
+        <attr name="titleText" format="string"/>
+        <attr name="descText" format="string"/>
+        <attr name="iconImage" format="integer"/>
+        <attr name="hideDesc" format="boolean"/>
+        <attr name="subTitle" format="string"/>
+        <attr name="hideDivider" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaskedEditText">
+        <attr name="mask" format="string"/>
+        <attr name="mask_fill" format="string"/>
+        <attr name="has_text_input_layout" format="boolean"/>
+        <attr name="allowed_chars" format="string"/>
+        <attr name="denied_chars" format="string"/>
+        <attr name="char_representation" format="string"/>
+    </declare-styleable>
+</resources>

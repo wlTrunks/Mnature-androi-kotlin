@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Nature" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/nature_green</item>
+        <item name="colorPrimaryDark">@color/dark_nature_green</item>
+        <item name="colorAccent">@color/dark_nature_green</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:buttonStyle">@style/NatureButton</item>
+        <item name="android:textViewStyle">@style/NatureText</item>
+        <item name="android:editTextStyle">@style/NatureEditor</item>
+        <item name="android:listViewStyle">@style/NatureList</item>
+
+        <item name="android:radioButtonStyle">@style/NatureRadioButton</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Light_green</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Light_green</item>
+
+        <item name="android:actionOverflowButtonStyle">
+            @style/Widget.AppCompat.ActionButton.Overflow
+        </item>
+        <!--<item name="android:actionModeBackground">@drawable/cab_background_top_light_green</item>-->
+        <!--<item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_light_green-->
+        <!--</item>-->
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Light_green
+        </item>
+
+        <item name="android:actionBarWidgetTheme">@style/Theme.Light_green.Widget</item>
+
+        <item name="android:checkboxStyle">@style/NatureCheckBox</item>
+        <item name="android:alertDialogTheme">@style/Theme.NatureDialog</item>
+        <item name="spinnerStyle">@style/NatureSpinner</item>
+    </style>
+
+    <style name="Theme.NatureDialog" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="colorPrimary">@color/nature_green</item>
+        <item name="colorAccent">@color/dark_nature_green</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="colorPrimaryDark">@color/dark_nature_green</item>
+    </style>
+
+    <style name="NatureSpinner" parent="@android:style/Widget.Spinner.DropDown">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/natureColorPrimary</item>
+        <item name="colorPrimaryDark">@color/natureColorPrimaryDark</item>
+        <item name="colorAccent">@color/natureColorPrimary</item>
+        <item name="colorControlActivated">@color/natureColorPrimary</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="AppThemeNoActionBar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeNoActionBar.NoActionBar.TransparentStatusBar"/>
+
+    <style name="ToolBarTitleTextAppearance" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/toolbar_title</item>
+    </style>
+</resources>
