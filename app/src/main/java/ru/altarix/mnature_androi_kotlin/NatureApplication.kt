@@ -3,6 +3,7 @@ package ru.altarix.mnature_androi_kotlin
 import android.app.Application
 import android.content.Context
 import ru.altarix.mnature_androi_kotlin.base.network.NetworkManager
+import ru.altarix.mnature_androi_kotlin.base.network.session.Session
 import ru.altarix.mnature_androi_kotlin.model.DashBoardItem
 import java.util.ArrayList
 
@@ -13,12 +14,11 @@ import java.util.ArrayList
 
 class NatureApplication : Application() {
 
-    val networkManager: NetworkManager
+    var networkManager: NetworkManager? = null
+    var context: Context? = null
 
     init {
         instance = this
-        NetworkManager.init("https://www.priroda-ok.ru:443/")
-        networkManager = NetworkManager.getInstance()!!
     }
 
     companion object {
@@ -32,7 +32,10 @@ class NatureApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        val context: Context = NatureApplication.applicationContext()
+        context = NatureApplication.applicationContext()
+        NetworkManager.init(context!!,"https://www.priroda-ok.ru:443/",Session.instance(context!!).sssPrefs)
+        networkManager = NetworkManager.getInstance()
+
         initDashBoardItemList()
     }
 

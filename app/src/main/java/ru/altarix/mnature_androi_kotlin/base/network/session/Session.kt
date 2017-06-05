@@ -7,7 +7,8 @@ import android.content.Context
  */
 class Session private constructor(val context: Context) {
 
-    private val sssPrefs: SessionStorageSharedPrefs = SessionStorageSharedPrefs(context)
+
+    val sssPrefs: SessionStorageSharedPrefs = SessionStorageSharedPrefs(context)
 
     companion object {
         private var INSTANCE: Session? = null
@@ -17,6 +18,10 @@ class Session private constructor(val context: Context) {
                 INSTANCE = Session(context)
             }
             return INSTANCE as Session
+        }
+
+        fun getSession(): SessionStorageSharedPrefs {
+            return INSTANCE!!.sssPrefs
         }
     }
 }

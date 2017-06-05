@@ -6,6 +6,8 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
+import ru.altarix.mnature_androi_kotlin.api.NatureApiService
+import ru.altarix.mnature_androi_kotlin.base.network.session.AddHeaderInterceptor
 import ru.altarix.mnature_androi_kotlin.base.network.session.SessionListener
 
 
@@ -25,13 +27,16 @@ class NetworkManager {
         }
 
         fun <S> httpClient(serviceClass: Class<S>): S {
-//            val httpClient = NetworkManager.getInstance()!!.httpClient
-            var retrofit = NetworkManager.getInstance()!!.retrofit
-//            if (!httpClient.interceptors().contains(NetworkManager.getInstance()!!.logging)) {
-//                httpClient.addInterceptor(NetworkManager.getInstance()!!.logging)
-//                NetworkManager.getInstance()!!.builder.client(httpClient.build())
-//                retrofit = NetworkManager.getInstance()!!.builder.build()
-//            }
+            var httpClient = Holder.INSTANCE!!.httpClient
+            if (Holder.INSTANCE!!.sessionListener.hasSession()) {
+                Holder.INSTANCE!!.httpClient.addNetworkInterceptor(AddHeaderInterceptor(Holder.INSTANCE!!.sessionListener.getSession()!!))
+
+            }
+            var retrofit = Retrofit.Builder()
+                    .baseUrl(Holder.INSTANCE!!.BASE_URL)
+                    .addConverterFactory(MoshiConverterFactory.create())
+                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                    .client(httpClient.build()).build()
             return retrofit.create(serviceClass)
         }
     }
@@ -55,11 +60,9 @@ class NetworkManager {
                 .setLevel(HttpLoggingInterceptor.Level.BODY)
         httpClient.addInterceptor(logging)
         this.sessionListener = sessionListener
-
     }
 
     private object Holder {
         var INSTANCE: NetworkManager? = null
     }
-
 }
